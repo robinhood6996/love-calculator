@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <!---Tailwind CDN-->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!--Styles-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="text-center mt-5 bg-green-300 p-5 w-2/4 m-auto rounded">
+        <h2 class="sm\:text-xl lg:text-3xl font-semibold text-gray-800">Calculate Love Between You and Her</h2>
+    </header>
+
+    <main>
+        <section id="input-section" class="input-section  sm:w-3/4 lg:w-2/4 m-auto mt-8">
+            <div class="main-input grid sm:grid-cols-1 lg:grid-cols-2 gap-4 p-3">
+                <input class="border rounded border-green-600 p-3 outline-none text-xl" type="text" name=""
+                    id="yourname" placeholder="Enter Your Name">
+                <input class="border rounded border-green-600 p-3 outline-none text-xl" type="text" name=""
+                    id="theirname" placeholder="Enter Her/His Name">
+            </div>
+            <div class="grid grid-cols-1 mt-8 p-4">
+                <button id="cal-btn" onclick="calculateLove()"
+                    class="bg-green-400 p-3 text-center text-white text-2xl">Calculte</button>
+            </div>
+        </section>
+
+
+        <section id="message-section" class="sm:w-full lg:w-2/4 m-auto mt-8 p-2">
+            <div id="congo" class="message-area bg-green-600 text-white p-5 rounded">
+                <h4 class="text-center text-3xl text-bold mb-3">Congratulations!</h4>
+                <p id="congo-message" class="text-xl"></p>
+            </div>
+            <div id="warning" class="message-area bg-gray-600 text-white p-5 rounded">
+                <h4 class="text-center text-3xl text-bold mb-3">Good Wishes!</h4>
+                <p id="warning-message" class="text-xl"></p>
+            </div>
+            <div id="danger" class="message-area bg-red-600 text-white p-5 rounded">
+                <h4 class="text-center text-3xl text-bold mb-3">You are on risk!</h4>
+                <p id="danger-message" class="text-xl text-center"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center">
+        <h5>This Fun Cooked By Robihood &#128516;</h5>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
